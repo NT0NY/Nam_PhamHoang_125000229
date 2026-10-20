@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NTONY Parfums - Nước hoa chính hãng, tư vấn mùi hương theo phong cách. Website của Phạm Hoàng Nam.">
+  <title>NTONY Parfums | Nước hoa cao cấp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a class="brand" href="#home" aria-label="NTONY Parfums">
+        <span>NTONY</span>
+        <small>PARFUMS</small>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a class="active" href="#home">Trang chủ</a></li>
+        <li><a href="#products">Sản phẩm</a></li>
+        <li><a href="#story">Thương hiệu</a></li>
+        <li><a href="#consult">Tư vấn</a></li>
+        <li><a href="#services">Dịch vụ</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+
+      <div class="nav-tools">
+        <button type="button" class="search-toggle" id="search-toggle" aria-label="Tìm kiếm" aria-expanded="false" aria-controls="search-bar">Tìm kiếm</button>
+        <a class="login-link" href="#contact">Đăng nhập</a>
+        <button type="button" class="bag-button" id="open-cart" aria-label="Xem giỏ hàng" aria-controls="cart-drawer">
+          Giỏ hàng <span id="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+    <form class="search-bar container" id="search-bar" role="search" hidden>
+      <label for="search-input" class="visually-hidden">Tìm sản phẩm</label>
+      <input id="search-input" type="search" placeholder="Tìm theo tên hoặc nhóm hương: rose, oud, floral, tươi mát..." autocomplete="off">
+      <button class="button button-dark" type="submit">Tìm</button>
+    </form>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content container">
+        <article class="hero-copy animate__animated animate__fadeInLeft">
+          <p class="eyebrow">BỘ SƯU TẬP MỚI 2026</p>
+          <h1>Mùi hương <em>kể câu chuyện</em> của riêng bạn.</h1>
+          <p class="hero-description">
+            Nước hoa chính hãng được tuyển chọn cho từng phong cách và từng khoảnh khắc.
+            Nhận tư vấn miễn phí để tìm mùi hương hợp với bạn.
+          </p>
+          <p class="hero-actions">
+            <a class="button button-dark animate__animated animate__pulse animate__delay-2s" href="#products">Khám phá bộ sưu tập</a>
+            <a class="button button-light" href="#consult">Nhận tư vấn</a>
+          </p>
+        </article>
+
+        <figure class="hero-photo animate__animated animate__fadeInRight">
+          <img src="https://images.unsplash.com/photo-1760920250029-36af9369a0bb?auto=format&fit=crop&q=75&w=1000" alt="Chai nước hoa thủy tinh nắp đen" width="1000" height="1250" onerror="this.remove()">
+          <figcaption class="hero-label">NO. 01<br><strong>Velvet Rose</strong></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Cam kết của cửa hàng">
+      <ul class="container trust-list">
+        <li><strong>Chính hãng 100%</strong><span>Có tem và hóa đơn đầy đủ</span></li>
+        <li><strong>Giao hàng nhanh</strong><span>Miễn phí giao hàng cho đơn từ 1.000.000₫</span></li>
+        <li><strong>Đổi trả 7 ngày</strong><span>Nếu sản phẩm bị lỗi</span></li>
+        <li><strong>Gói quà miễn phí</strong><span>Hộp quà đơn giản, sang trọng</span></li>
+      </ul>
+    </section>
+
+    <section class="intro section">
+      <div class="container intro-grid" data-aos="fade-up">
+        <p class="eyebrow">TRIẾT LÝ</p>
+        <article>
+          <h2>Hương thơm không chỉ là một món phụ kiện. <em>Đó là dấu ấn bạn để lại.</em></h2>
+          <p>
+            NTONY mang đến những mùi hương hiện đại, thanh lịch và dễ ghi nhớ,
+            giúp mỗi người tìm thấy một cá tính riêng qua hương thơm.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="products section">
+      <div class="container">
+        <header class="section-heading" data-aos="fade-up">
+          <hgroup>
+            <p class="eyebrow">BỘ SƯU TẬP</p>
+            <h2>Sản phẩm <em>nổi bật</em></h2>
+          </hgroup>
+          <p class="heading-note">Năm lựa chọn được yêu thích nhất của NTONY.</p>
+        </header>
+
+        <p class="filter-status" id="filter-status" role="status" hidden>
+          <span id="filter-text"></span>
+          <button type="button" id="filter-clear">Xóa bộ lọc</button>
+        </p>
+        <p class="no-result" id="no-result" hidden>Không tìm thấy sản phẩm phù hợp. Hãy thử từ khóa khác như "rose", "oud" hoặc "floral".</p>
+
+        <div class="product-grid">
+          <article class="product-card" data-aos="fade-up" data-search="velvet rose floral hoa hồng hoa nhài mẫu đơn">
+            <figure class="product-image rose">
+              <img src="https://images.unsplash.com/photo-1589493732575-11a963a7c415?auto=format&fit=crop&q=75&w=800" alt="Chai nước hoa vàng trên nền hoa hồng" width="800" height="1000" loading="lazy" onerror="this.remove()">
+              <span class="product-number">01</span><span class="badge">BESTSELLER</span>
+            </figure>
+            <section class="product-info">
+              <p>EAU DE PARFUM · 50ML</p>
+              <h3>Velvet Rose</h3>
+              <footer class="product-bottom">
+                <strong>1.290.000₫</strong>
+                <button class="add-button" type="button" data-id="velvet-rose" data-price="1290000" data-name="Velvet Rose">+ Thêm vào giỏ</button>
+              </footer>
+            </section>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="100" data-search="golden oud woody oriental gỗ đàn hương hổ phách">
+            <figure class="product-image oud">
+              <img src="https://images.unsplash.com/photo-1584841247175-4d766cefa018?auto=format&fit=crop&q=75&w=800" alt="Chai nước hoa đen và vàng" width="800" height="1000" loading="lazy" onerror="this.remove()">
+              <span class="product-number">02</span>
+            </figure>
+            <section class="product-info">
+              <p>EAU DE PARFUM · 50ML</p>
+              <h3>Golden Oud</h3>
+              <footer class="product-bottom">
+                <strong>1.590.000₫</strong>
+                <button class="add-button" type="button" data-id="golden-oud" data-price="1590000" data-name="Golden Oud">+ Thêm vào giỏ</button>
+              </footer>
+            </section>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="200" data-search="pure linen fresh citrus bergamot hương sạch tươi mát">
+            <figure class="product-image linen">
+              <img src="https://images.unsplash.com/photo-1634944119598-837431c4900a?auto=format&fit=crop&q=75&w=800" alt="Chai nước hoa trên mặt bàn xám" width="800" height="1000" loading="lazy" onerror="this.remove()">
+              <span class="product-number">03</span>
+            </figure>
+            <section class="product-info">
+              <p>EAU DE PARFUM · 50ML</p>
+              <h3>Pure Linen</h3>
+              <footer class="product-bottom">
+                <strong>1.190.000₫</strong>
+                <button class="add-button" type="button" data-id="pure-linen" data-price="1190000" data-name="Pure Linen">+ Thêm vào giỏ</button>
+              </footer>
+            </section>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-search="amber sunset oriental hổ phách vanilla gia vị ấm áp">
+            <figure class="product-image amber">
+              <img src="https://images.unsplash.com/photo-1694422789021-54bd74b39f52?auto=format&fit=crop&q=75&w=800" alt="Chai nước hoa trên mặt bàn tông đỏ cam" width="800" height="1000" loading="lazy" onerror="this.remove()">
+              <span class="product-number">04</span><span class="badge">MỚI</span>
+            </figure>
+            <section class="product-info">
+              <p>EAU DE PARFUM · 50ML</p>
+              <h3>Amber Sunset</h3>
+              <footer class="product-bottom">
+                <strong>1.690.000₫</strong>
+                <button class="add-button" type="button" data-id="amber-sunset" data-price="1690000" data-name="Amber Sunset">+ Thêm vào giỏ</button>
+              </footer>
+            </section>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="100" data-search="green garden fresh trà xanh bạc hà lá xanh tươi mát">
+            <figure class="product-image garden">
+              <img src="https://images.unsplash.com/photo-1720967361123-9c17ec9025dc?auto=format&fit=crop&q=75&w=800" alt="Chai nước hoa bên chậu cây xanh" width="800" height="1000" loading="lazy" onerror="this.remove()">
+              <span class="product-number">05</span><span class="badge">MỚI</span>
+            </figure>
+            <section class="product-info">
+              <p>EAU DE PARFUM · 50ML</p>
+              <h3>Green Garden</h3>
+              <footer class="product-bottom">
+                <strong>1.390.000₫</strong>
+                <button class="add-button" type="button" data-id="green-garden" data-price="1390000" data-name="Green Garden">+ Thêm vào giỏ</button>
+              </footer>
+            </section>
+          </article>
+          <article class="promo-card" id="promo-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Chưa biết chọn mùi nào?</h3>
+            <p>Nhận tư vấn miễn phí theo phong cách và ngân sách của bạn.</p>
+            <a class="button button-light" href="#consult">Nhận tư vấn</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story section">
+      <div class="container story-grid">
+        <figure class="story-art" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1543593822-d283d968aa4a?auto=format&fit=crop&q=75&w=1000" alt="Bộ sưu tập chai nước hoa thủy tinh" width="1000" height="1250" loading="lazy" onerror="this.remove()">
+        </figure>
+
+        <article data-aos="fade-left">
+          <p class="eyebrow">CÂU CHUYỆN</p>
+          <h2>Một chút <em>lãng mạn</em>, một chút <em>táo bạo.</em></h2>
+          <p>
+            NTONY được xây dựng với ý tưởng biến nước hoa thành một phần
+            của phong cách sống: tinh tế nhưng không cầu kỳ, nổi bật nhưng không phô trương.
+          </p>
+          <p>
+            Mỗi thiết kế hướng đến trải nghiệm mua sắm rõ ràng, nhẹ nhàng
+            và tập trung vào sản phẩm.
+          </p>
+          <a class="button button-dark" href="#products">Xem sản phẩm</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="notes section">
+      <div class="container">
+        <header class="section-heading" data-aos="fade-up">
+          <hgroup>
+            <p class="eyebrow">TÌM MÙI HƯƠNG CỦA BẠN</p>
+            <h2>Chọn nhóm nốt <em>hương</em></h2>
+          </hgroup>
+        </header>
+
+        <div class="note-grid">
+          <article data-aos="zoom-in"><h3>Floral</h3><p>Hoa hồng, hoa nhài, mẫu đơn.</p><button type="button" data-filter="floral">Khám phá</button></article>
+          <article data-aos="zoom-in" data-aos-delay="80"><h3>Woody</h3><p>Gỗ đàn hương, tuyết tùng, oud.</p><button type="button" data-filter="woody">Khám phá</button></article>
+          <article data-aos="zoom-in" data-aos-delay="160"><h3>Fresh</h3><p>Citrus, bergamot và hương sạch.</p><button type="button" data-filter="fresh">Khám phá</button></article>
+          <article data-aos="zoom-in" data-aos-delay="240"><h3>Oriental</h3><p>Hổ phách, vanilla và gia vị.</p><button type="button" data-filter="oriental">Khám phá</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="consult" class="consult section">
+      <div class="container">
+        <header class="section-heading" data-aos="fade-up">
+          <hgroup>
+            <p class="eyebrow">TƯ VẤN MÙI HƯƠNG</p>
+            <h2>Trả lời 3 câu hỏi, <em>tìm mùi hương hợp với bạn</em></h2>
+          </hgroup>
+          <p class="heading-note">Gợi ý nhanh theo dịp sử dụng, nhóm hương và ngân sách.</p>
+        </header>
+
+        <div class="consult-grid">
+          <form id="consult-form" class="consult-form" data-aos="fade-right">
+            <fieldset>
+              <legend>1. Bạn dùng nước hoa trong dịp nào?</legend>
+              <label class="choice"><input type="radio" name="occasion" value="daily" required><span>Hằng ngày, đi làm</span></label>
+              <label class="choice"><input type="radio" name="occasion" value="date"><span>Hẹn hò, tiệc tối</span></label>
+              <label class="choice"><input type="radio" name="occasion" value="gift"><span>Làm quà tặng</span></label>
+            </fieldset>
+            <fieldset>
+              <legend>2. Bạn thích nhóm hương nào?</legend>
+              <label class="choice"><input type="radio" name="scent" value="floral" required><span>Floral: hoa hồng, hoa nhài</span></label>
+              <label class="choice"><input type="radio" name="scent" value="woody"><span>Woody: gỗ, oud</span></label>
+              <label class="choice"><input type="radio" name="scent" value="fresh"><span>Fresh: tươi mát, sạch sẽ</span></label>
+              <label class="choice"><input type="radio" name="scent" value="oriental"><span>Oriental: hổ phách, vanilla</span></label>
+            </fieldset>
+            <fieldset>
+              <legend>3. Ngân sách của bạn?</legend>
+              <label class="choice"><input type="radio" name="budget" value="1300000" required><span>Dưới 1.300.000₫</span></label>
+              <label class="choice"><input type="radio" name="budget" value="1600000"><span>Dưới 1.600.000₫</span></label>
+              <label class="choice"><input type="radio" name="budget" value="999999999"><span>Không giới hạn</span></label>
+            </fieldset>
+            <button class="button button-dark" type="submit">Xem gợi ý cho tôi</button>
+          </form>
+
+          <section class="consult-result" id="consult-result" aria-live="polite" data-aos="fade-left">
+            <p class="consult-empty" id="consult-empty">Chọn đáp án ở bên trái, gợi ý sẽ hiện ở đây.</p>
+            <ul class="result-list" id="result-list"></ul>
+          </section>
+        </div>
+
+        <article class="consult-request" data-aos="fade-up">
+          <header>
+            <h3>Muốn được chuyên viên tư vấn trực tiếp?</h3>
+            <p>Để lại số điện thoại, NTONY sẽ gọi lại để tư vấn miễn phí.</p>
+          </header>
+          <form id="request-form" class="request-form">
+            <label for="r-name">Họ và tên</label>
+            <input id="r-name" type="text" required autocomplete="name">
+            <label for="r-phone">Số điện thoại</label>
+            <input id="r-phone" type="tel" required pattern="(0|\+84)[0-9]{9}" title="Nhập số điện thoại Việt Nam, ví dụ 0987654321" autocomplete="tel">
+            <label for="r-note">Bạn cần tư vấn gì?</label>
+            <input id="r-note" type="text" placeholder="Ví dụ: chọn quà cho bạn gái, mùi hương cho mùa hè">
+            <button class="button button-dark" type="submit">Gửi yêu cầu tư vấn</button>
+            <p id="request-message" aria-live="polite"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="services section">
+      <div class="container services-grid">
+        <header data-aos="fade-up">
+          <p class="eyebrow">DỊCH VỤ</p>
+          <h2>Trải nghiệm <em>được chăm chút.</em></h2>
+        </header>
+
+        <ol class="service-list">
+          <li data-aos="fade-up"><h3>Tư vấn mùi hương</h3><p>Gợi ý lựa chọn dựa trên phong cách và nhu cầu.</p></li>
+          <li data-aos="fade-up" data-aos-delay="100"><h3>Gói quà miễn phí</h3><p>Hộp quà tối giản, phù hợp cho những dịp đặc biệt.</p></li>
+          <li data-aos="fade-up" data-aos-delay="200"><h3>Hỗ trợ tận tâm</h3><p>Giải đáp thông tin sản phẩm và đơn hàng nhanh chóng.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-grid">
+        <article data-aos="fade-right">
+          <p class="eyebrow">LIÊN HỆ</p>
+          <h2>Nhận cảm hứng <em>mỗi tuần.</em></h2>
+          <p>Đăng ký email để nhận thông tin bộ sưu tập và ưu đãi mới.</p>
+        </article>
+
+        <form id="contact-form" class="contact-form" data-aos="fade-left">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="email@example.com" required>
+          <button class="button button-dark" type="submit">Đăng ký</button>
+          <p id="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <section>
+        <a class="brand footer-brand" href="#home"><span>NTONY</span><small>PARFUMS</small></a>
+        <p>Website bán nước hoa.</p>
+      </section>
+      <address class="contact-info">
+        <strong>THÔNG TIN LIÊN HỆ</strong>
+        <ul class="contact-list">
+          <li><strong>Email liên hệ:</strong> <a href="mailto:namp48776@gmail.com">namp48776@gmail.com</a></li>
+          <li><strong>Số điện thoại:</strong> <a href="tel:0987200221">0987200221</a></li>
+        </ul>
+      </address>
+      <section>
+        <strong>© 2026 NTONY</strong>
+        <p>Ảnh từ <a href="https://unsplash.com" rel="noopener">Unsplash</a>: Kier in Sight Archives, Lindsey Savage, Mae Mu, Saman Taheri, Natanni, Chandradas Balan, Aman Chaturvedi.</p>
+      </section>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true">
+    <header class="drawer-head">
+      <h2 id="drawer-title">Giỏ hàng</h2>
+      <button type="button" class="drawer-close" id="close-cart" aria-label="Đóng giỏ hàng">Đóng</button>
+    </header>
+
+    <section id="view-cart" class="drawer-body">
+      <ul class="cart-items" id="cart-items"></ul>
+      <p class="cart-empty" id="cart-empty">Giỏ hàng đang trống. Hãy chọn một mùi hương bạn thích.</p>
+      <footer class="drawer-foot">
+        <p class="total-row"><span>Tạm tính</span><strong id="cart-total">0₫</strong></p>
+        <p class="ship-note" id="ship-note"></p>
+        <button class="button button-dark" type="button" id="go-checkout">Đặt hàng</button>
+        <button class="button button-light" type="button" id="keep-shopping">Tiếp tục mua sắm</button>
+      </footer>
+    </section>
+
+    <section id="view-checkout" class="drawer-body" hidden>
+      <form id="checkout-form" class="checkout-form">
+        <label for="c-name">Họ và tên</label>
+        <input id="c-name" name="name" type="text" required autocomplete="name">
+        <label for="c-phone">Số điện thoại</label>
+        <input id="c-phone" name="phone" type="tel" required pattern="(0|\+84)[0-9]{9}" title="Nhập số điện thoại Việt Nam, ví dụ 0987654321" autocomplete="tel">
+        <label for="c-address">Địa chỉ nhận hàng</label>
+        <input id="c-address" name="address" type="text" required autocomplete="street-address">
+        <label for="c-note">Ghi chú (không bắt buộc)</label>
+        <input id="c-note" name="note" type="text">
+        <fieldset>
+          <legend>Thanh toán</legend>
+          <label class="radio"><input type="radio" name="pay" value="cod" checked> Thanh toán khi nhận hàng (COD)</label>
+          <label class="radio"><input type="radio" name="pay" value="bank"> Chuyển khoản ngân hàng</label>
+        </fieldset>
+        <p class="total-row"><span>Tổng thanh toán</span><strong id="checkout-total">0₫</strong></p>
+        <p class="ship-note">Website phục vụ bài thực hành, đơn hàng chỉ được lưu trên trình duyệt này.</p>
+        <button class="button button-dark" type="submit">Xác nhận đặt hàng</button>
+        <button class="button button-light" type="button" id="back-cart">Quay lại giỏ hàng</button>
+      </form>
+    </section>
+
+    <section id="view-done" class="drawer-body done" hidden>
+      <h3>Đặt hàng thành công</h3>
+      <p>Cảm ơn <strong id="done-name"></strong>. Mã đơn của bạn là <strong id="done-code"></strong>.</p>
+      <p>Tổng thanh toán: <strong id="done-total"></strong> (<span id="done-pay"></span>).</p>
+      <p>Cửa hàng sẽ gọi đến số <strong id="done-phone"></strong> để xác nhận đơn.</p>
+      <button class="button button-dark" type="button" id="done-close">Tiếp tục mua sắm</button>
+    </section>
+  </aside>
+
+  <p id="toast" class="toast" role="status"></p>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true, offset: 70 });
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    menuToggle.addEventListener("click", () => {
+      const opened = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!opened));
+      navLinks.classList.toggle("open");
+    });
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Đánh dấu mục menu theo vị trí cuộn
+    const sections = document.querySelectorAll("main section[id]");
+    const links = document.querySelectorAll(".nav-links a");
+    sections.forEach(s =>
+      new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + s.id));
+      }, { rootMargin: "-45% 0px -50% 0px" }).observe(s));
+
+    // ===== Tiện ích =====
+    const $ = (s, r = document) => r.querySelector(s);
+    const fmt = n => n.toLocaleString("vi-VN") + "₫";
+    const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").toLowerCase();
+    const toast = $("#toast");
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 1800);
+    }
+
+    // ===== Tìm kiếm và lọc sản phẩm =====
+    const searchBar = $("#search-bar"), searchInput = $("#search-input"), searchToggle = $("#search-toggle");
+    const cards = document.querySelectorAll(".product-card");
+    const promoCard = $("#promo-card");
+    const filterStatus = $("#filter-status"), filterText = $("#filter-text"), noResult = $("#no-result");
+
+    function applyFilter(q) {
+      const nq = norm(q.trim());
+      let shown = 0;
+      cards.forEach(c => {
+        const ok = !nq || norm(c.dataset.search).includes(nq);
+        c.hidden = !ok;
+        if (ok) shown++;
+      });
+      promoCard.hidden = !!nq;
+      filterStatus.hidden = !nq;
+      filterText.textContent = nq ? `Kết quả cho "${q.trim()}": ${shown} sản phẩm` : "";
+      noResult.hidden = shown > 0;
+    }
+    function clearFilter() { searchInput.value = ""; applyFilter(""); }
+
+    searchToggle.addEventListener("click", () => {
+      const open = searchBar.hidden;
+      searchBar.hidden = !open;
+      searchToggle.setAttribute("aria-expanded", String(open));
+      if (open) searchInput.focus();
+    });
+    searchInput.addEventListener("input", () => applyFilter(searchInput.value));
+    searchInput.addEventListener("keydown", e => { if (e.key === "Escape") { clearFilter(); searchBar.hidden = true; searchToggle.setAttribute("aria-expanded", "false"); } });
+    searchBar.addEventListener("submit", e => {
+      e.preventDefault();
+      applyFilter(searchInput.value);
+      $("#products").scrollIntoView({ behavior: "smooth" });
+    });
+    $("#filter-clear").addEventListener("click", clearFilter);
+    document.querySelectorAll("[data-filter]").forEach(btn =>
+      btn.addEventListener("click", () => {
+        searchInput.value = btn.dataset.filter;
+        applyFilter(btn.dataset.filter);
+        $("#products").scrollIntoView({ behavior: "smooth" });
+      }));
+
+    // ===== Giỏ hàng =====
+    const FREE_SHIP = 1000000;
+    let cart = {};
+    try { cart = JSON.parse(localStorage.getItem("ntony_cart")) || {}; } catch (e) { cart = {}; }
+    const saveCart = () => { try { localStorage.setItem("ntony_cart", JSON.stringify(cart)); } catch (e) {} };
+    const items = () => Object.values(cart);
+    const total = () => items().reduce((s, i) => s + i.price * i.qty, 0);
+
+    const drawer = $("#cart-drawer"), overlay = $("#overlay");
+    const views = { cart: $("#view-cart"), checkout: $("#view-checkout"), done: $("#view-done") };
+    let lastFocus = null;
+
+    function showView(name) {
+      Object.entries(views).forEach(([k, el]) => el.hidden = k !== name);
+      $("#drawer-title").textContent = name === "checkout" ? "Đặt hàng" : name === "done" ? "Hoàn tất" : "Giỏ hàng";
+    }
+    function openDrawer(view = "cart") {
+      lastFocus = document.activeElement;
+      showView(view);
+      overlay.hidden = false;
+      drawer.classList.add("open");
+      drawer.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      $("#close-cart").focus();
+    }
+    function closeDrawer() {
+      drawer.classList.remove("open");
+      drawer.setAttribute("aria-hidden", "true");
+      overlay.hidden = true;
+      document.body.style.overflow = "";
+      if (lastFocus) lastFocus.focus();
+    }
+
+    function renderCart() {
+      const list = items();
+      const count = list.reduce((s, i) => s + i.qty, 0);
+      $("#cart-count").textContent = count;
+      $("#cart-empty").hidden = list.length > 0;
+      $("#go-checkout").disabled = list.length === 0;
+      $("#cart-total").textContent = fmt(total());
+      $("#checkout-total").textContent = fmt(total());
+      const left = FREE_SHIP - total();
+      $("#ship-note").textContent = list.length === 0 ? "" : left > 0 ? `Mua thêm ${fmt(left)} để được miễn phí giao hàng.` : "Đơn hàng của bạn được miễn phí giao hàng.";
+      $("#cart-items").innerHTML = list.map(i => `
+        <li class="cart-item" data-id="${i.id}">
+          <img src="${i.img}" alt="" width="64" height="80" onerror="this.remove()">
+          <div><h3>${i.name}</h3><p>${fmt(i.price)}</p></div>
+          <div class="qty">
+            <button type="button" data-act="dec" aria-label="Giảm số lượng ${i.name}">−</button>
+            <span aria-live="polite">${i.qty}</span>
+            <button type="button" data-act="inc" aria-label="Tăng số lượng ${i.name}">+</button>
+          </div>
+          <button type="button" class="remove" data-act="del" aria-label="Xóa ${i.name} khỏi giỏ">Xóa</button>
+        </li>`).join("");
+    }
+
+    document.querySelectorAll(".add-button").forEach(button => {
+      button.addEventListener("click", () => {
+        const id = button.dataset.id;
+        const img = button.closest(".product-card").querySelector("img");
+        if (!cart[id]) cart[id] = { id, name: button.dataset.name, price: Number(button.dataset.price), qty: 0, img: img ? img.src : "" };
+        cart[id].qty++;
+        saveCart();
+        renderCart();
+        showToast(`${button.dataset.name} đã được thêm vào giỏ hàng.`);
+      });
+    });
+
+    $("#cart-items").addEventListener("click", e => {
+      const btn = e.target.closest("[data-act]");
+      if (!btn) return;
+      const id = btn.closest(".cart-item").dataset.id;
+      if (btn.dataset.act === "inc") cart[id].qty++;
+      if (btn.dataset.act === "dec") cart[id].qty--;
+      if (btn.dataset.act === "del" || cart[id].qty <= 0) delete cart[id];
+      saveCart();
+      renderCart();
+    });
+
+    $("#open-cart").addEventListener("click", () => openDrawer("cart"));
+    $("#close-cart").addEventListener("click", closeDrawer);
+    $("#keep-shopping").addEventListener("click", closeDrawer);
+    $("#done-close").addEventListener("click", () => { closeDrawer(); $("#products").scrollIntoView({ behavior: "smooth" }); });
+    overlay.addEventListener("click", closeDrawer);
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && drawer.classList.contains("open")) closeDrawer(); });
+    $("#go-checkout").addEventListener("click", () => { if (items().length) { showView("checkout"); $("#c-name").focus(); } });
+    $("#back-cart").addEventListener("click", () => showView("cart"));
+
+    // ===== Đặt hàng =====
+    const payLabel = { cod: "thanh toán khi nhận hàng", bank: "chuyển khoản ngân hàng" };
+    $("#checkout-form").addEventListener("submit", e => {
+      e.preventDefault();
+      if (!items().length) return;
+      const d = new FormData(e.target);
+      const order = {
+        code: "NT" + Date.now().toString().slice(-6),
+        name: d.get("name").trim(), phone: d.get("phone").trim(), address: d.get("address").trim(),
+        note: d.get("note").trim(), pay: d.get("pay"), total: total(), items: items(), time: new Date().toISOString()
+      };
+      try {
+        const orders = JSON.parse(localStorage.getItem("ntony_orders")) || [];
+        orders.push(order);
+        localStorage.setItem("ntony_orders", JSON.stringify(orders));
+      } catch (err) {}
+      $("#done-name").textContent = order.name;
+      $("#done-code").textContent = order.code;
+      $("#done-total").textContent = fmt(order.total);
+      $("#done-pay").textContent = payLabel[order.pay];
+      $("#done-phone").textContent = order.phone;
+      cart = {};
+      saveCart();
+      renderCart();
+      e.target.reset();
+      showView("done");
+    });
+
+    document.querySelector("#contact-form").addEventListener("submit", event => {
+      event.preventDefault();
+      document.querySelector("#form-message").textContent = "Đăng ký thành công. Cảm ơn bạn đã quan tâm NTONY.";
+      event.target.reset();
+    });
+
+    // ===== Tư vấn mùi hương =====
+    const CATALOG = [
+      { id: "velvet-rose",  name: "Velvet Rose",  price: 1290000, scent: ["floral"],              occasion: ["date", "gift"],  why: "hương hoa hồng nữ tính, dễ tặng" },
+      { id: "golden-oud",   name: "Golden Oud",   price: 1590000, scent: ["woody", "oriental"],   occasion: ["date"],          why: "hương gỗ ấm, cuốn hút cho buổi tối" },
+      { id: "pure-linen",   name: "Pure Linen",   price: 1190000, scent: ["fresh"],               occasion: ["daily"],         why: "sạch và nhẹ, hợp đi làm mỗi ngày" },
+      { id: "amber-sunset", name: "Amber Sunset", price: 1690000, scent: ["oriental"],            occasion: ["date", "gift"],  why: "ngọt ấm với hổ phách và vanilla" },
+      { id: "green-garden", name: "Green Garden", price: 1390000, scent: ["fresh"],               occasion: ["daily", "gift"], why: "trà xanh và bạc hà, tươi mát dễ chịu" }
+    ];
+    const resultList = $("#result-list"), consultEmpty = $("#consult-empty");
+
+    function recommend(a) {
+      return CATALOG
+        .map(p => ({ p, score: (p.scent.includes(a.scent) ? 3 : 0) + (p.occasion.includes(a.occasion) ? 2 : 0) }))
+        .filter(r => r.p.price <= a.budget)
+        .sort((x, y) => y.score - x.score || x.p.price - y.p.price)
+        .slice(0, 2);
+    }
+
+    $("#consult-form").addEventListener("submit", e => {
+      e.preventDefault();
+      const d = new FormData(e.target);
+      const picks = recommend({ occasion: d.get("occasion"), scent: d.get("scent"), budget: Number(d.get("budget")) });
+      consultEmpty.hidden = true;
+      resultList.innerHTML = picks.map(({ p }, i) => {
+        const card = document.querySelector(`.add-button[data-id="${p.id}"]`).closest(".product-card");
+        const img = card.querySelector("img");
+        return `<li class="result-item">
+          ${img ? `<img src="${img.src}" alt="" width="96" height="120" onerror="this.remove()">` : ""}
+          <article>
+            <p class="result-tag">${i === 0 ? "Phù hợp nhất" : "Lựa chọn thay thế"}</p>
+            <h3>${p.name}</h3>
+            <p>${p.why}.</p>
+            <p class="result-price">${fmt(p.price)}</p>
+            <button type="button" class="button button-dark result-add" data-id="${p.id}">Thêm vào giỏ</button>
+          </article></li>`;
+      }).join("") || '<li class="consult-empty">Chưa có sản phẩm trong tầm giá này. Hãy chọn mức ngân sách cao hơn hoặc gửi yêu cầu tư vấn bên dưới.</li>';
+    });
+
+    resultList.addEventListener("click", e => {
+      const btn = e.target.closest(".result-add");
+      if (btn) document.querySelector(`.add-button[data-id="${btn.dataset.id}"]`).click();
+    });
+
+    $("#request-form").addEventListener("submit", e => {
+      e.preventDefault();
+      const req = { name: $("#r-name").value.trim(), phone: $("#r-phone").value.trim(), note: $("#r-note").value.trim(), time: new Date().toISOString() };
+      try {
+        const list = JSON.parse(localStorage.getItem("ntony_consults")) || [];
+        list.push(req);
+        localStorage.setItem("ntony_consults", JSON.stringify(list));
+      } catch (err) {}
+      $("#request-message").textContent = `Cảm ơn ${req.name}. NTONY sẽ gọi đến số ${req.phone} để tư vấn.`;
+      e.target.reset();
+    });
+
+    renderCart();
+  </script>
+</body>
+</html>
